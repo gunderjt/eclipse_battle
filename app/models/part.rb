@@ -27,7 +27,7 @@ class Part
 end
 
 '''Computers'''
-class Gluon < Parts
+class Gluon < Part
   def initialize()
     @computer = 3
     @power_consumption = 2
@@ -36,7 +36,7 @@ class Gluon < Parts
   end
 end
 
-class Positron < Parts
+class Positron < Part
   def initialize()
     @computer = 2
     @power_consumption = 1
@@ -45,14 +45,14 @@ class Positron < Parts
   end
 end
 
-class Electron < Parts
+class Electron < Part
   def initialize()
     @computer = 1
     super
   end
 end
 
-class Axion < Parts
+class Axion < Part
   def initialize()
     @computer = 3
     super
@@ -60,7 +60,7 @@ class Axion < Parts
 end
 
 '''Shields'''
-class Phase < Parts
+class Phase < Part
   def initialize()
     @shield = -2
     @power_consumption = 1
@@ -68,14 +68,14 @@ class Phase < Parts
   end
 end
 
-class Gauss < Parts
+class Gauss < Part
   def initialize()
     @shield = -1
     super
   end
 end
 
-class Morph < Parts
+class Morph < Part
   def initialize()
     @shield = -1
     @hit_recovery = 1
@@ -84,7 +84,7 @@ class Morph < Parts
   end
 end
 
-class Flux < Parts
+class Flux < Part
   def initialize()
     @shield = -3
     @power_consumption = 2
@@ -93,21 +93,21 @@ class Flux < Parts
 end
 
 '''Hulls'''
-class Hull < Parts
+class Hull < Part
   def initialize()
     @hull = 1
     super
   end
 end
 
-class Improved < Parts
+class Improved < Part
   def initialize()
     @hull = 2
     super
   end
 end
 
-class Sentient < Parts
+class Sentient < Part
   def initialize()
     @hull = 1
     @computer = 1
@@ -115,14 +115,14 @@ class Sentient < Parts
   end
 end
 
-class Shard < Parts
+class Shard < Part
   def initialize()
     @hull = 3
     super
   end
 end
 
-class Interceptor_Bay < Parts
+class Interceptor_Bay < Part
   def initialize()
     @hull = 1
     @power_consumption = 2
@@ -131,7 +131,7 @@ class Interceptor_Bay < Parts
   end
 end
 
-class Conifold < Parts
+class Conifold < Part
   def initialize()
     @hull = 3
     @power_consumption = 2
@@ -140,7 +140,7 @@ class Conifold < Parts
 end
 
 '''Drives'''
-class Nuclear < Parts
+class Nuclear < Part
   def initialize()
     @drive = 1
     @power_consumption = 1
@@ -149,7 +149,7 @@ class Nuclear < Parts
   end
 end
 
-class Fusion < Parts
+class Fusion < Part
   def initialize()
     @drive = 2
     @power_consumption = 2
@@ -158,7 +158,7 @@ class Fusion < Parts
   end
 end
 
-class Tachyon < Parts
+class Tachyon < Part
   def initialize()
     @drive = 3
     @power_consumption = 3
@@ -167,7 +167,7 @@ class Tachyon < Parts
   end
 end
 
-class Conformal < Parts
+class Conformal < Part
   def initialize()
     @drive = 4
     @power_consumption = 2
@@ -176,7 +176,7 @@ class Conformal < Parts
   end
 end
 
-class Jump < Parts
+class Jump < Part
   def initialize()
     @drive = 1
     @power_consumption = 2
@@ -185,42 +185,42 @@ class Jump < Parts
 end
 
 '''Power Sources'''
-class Nuclear_source < Parts
+class Nuclear_source < Part
   def initialize()
     @power = 3
     super
   end
 end
 
-class Fusion_source < Parts
+class Fusion_source < Part
   def initialize()
     @power = 6
     super
   end
 end
 
-class Tachyon_source < Parts
+class Tachyon_source < Part
   def initialize()
     @power = 9
     super
   end
 end
 
-class Zero_point < Parts
+class Zero_point < Part
   def initialize()
     @power = 12
     super
   end
 end
 
-class Hypergrid < Parts
+class Hypergrid < Part
   def initialize()
     @power = 11
     super
   end
 end
 
-class Muon < Parts
+class Muon < Part
   def initialize()
     @power = 2
     @initiative = 1
@@ -229,14 +229,14 @@ class Muon < Parts
 end
 
 '''Missles'''
-class Plasma_missle < Parts
+class Plasma_missle < Part
   def initialize()
     @orange_missle = 2
     super
   end
 end
 
-class Flux < Parts
+class Flux < Part
   def initialize()
     @yellow_missle = 2
     @initiative = 3
@@ -245,7 +245,7 @@ class Flux < Parts
 end
 
 '''Cannon'''
-class Ion < Parts
+class Ion < Part
   def initialize()
     @yellow_cannon = 1
     @power_consumption = 1
@@ -253,7 +253,7 @@ class Ion < Parts
   end
 end
 
-class Plasma < Parts
+class Plasma < Part
   def initialize()
     @orange_cannon = 1
     @power_consumption = 2
@@ -261,7 +261,7 @@ class Plasma < Parts
   end
 end
 
-class Antimatter < Parts
+class Antimatter < Part
   def initialize()
     @red_cannon = 1
     @power_consumption = 4
@@ -269,7 +269,7 @@ class Antimatter < Parts
   end
 end
 
-class Ion_turret < Parts
+class Ion_turret < Part
   def initialize()
     @yellow_cannon = 2
     @power_consumption = 1
@@ -277,7 +277,7 @@ class Ion_turret < Parts
   end
 end
 
-class Ion_disruptor < Parts
+class Ion_disruptor < Part
   def initialize()
     @yellow_cannon = 1
     @initiative = 3
