@@ -169,7 +169,7 @@ $(document).ready(function() {
 
 function ajaxSend(json_object){
 	$.ajax({
-		url: "http://localhost:3000/calculate",
+		url: "http://murmuring-brushlands-6618.herokuapp.com/calculate",
 		type: "POST",
 		data: {fleet : json_object}})
 	.done(function( msg ) {
