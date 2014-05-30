@@ -153,6 +153,7 @@ body{height:100%;}
 #parts_pool{  
 	margin:0 auto;
 	width:800px;
+	font-size: 95%;
 	text-align:center;
 	height: 125px;
 }
